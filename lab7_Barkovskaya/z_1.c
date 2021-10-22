@@ -2,13 +2,17 @@
 
 #include <stdio.h>
 #include <math.h>
- //Ввести проверку что 0 < a < 360
+ 
 int main (void)
 {
-    float a;
-    printf("\n Введите значение угла в градусах : ");
-    scanf("%f", &a);
-    a = M_PI / 180;
+    float a = -1;
+    while ((a < 0) && (a > 360))
+    {
+        printf("\n Введите значение угла в градусах : ");
+        scanf("%f", &a);
+        if ((a < 0) && (a > 360)) printf("\n Некорректное значение угла");
+    }
+    a = (M_PI / 180) * a;
     printf("\n Значение угла в радианах = %f", a);
     return(0);
 }

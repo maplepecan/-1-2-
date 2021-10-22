@@ -8,9 +8,9 @@ int main(void)
     int A, A1;
     printf("\n Введите значение A : ");
     scanf("%d", &A);
-    A1 = A * A;
-    A = A1 * A1;
-    A1 = A * A;
+    A1 = A * A; // квадрат
+    A = A1 * A1; // 4 степень
+    A1 = A * A; // 8 степень
     printf("\n A = %d", A1);
     return(0);
 }
