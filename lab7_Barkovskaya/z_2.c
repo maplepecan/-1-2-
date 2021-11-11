@@ -6,7 +6,7 @@
 int main (void)
 {
     float a = -1;
-    while ((a < 0) && (a > 2 * M_PI))
+    while ((a < 0) || (a > 2 * M_PI))
     {
         printf("\n Введите значение угла в радианах : ");
         scanf("%f", &a);
