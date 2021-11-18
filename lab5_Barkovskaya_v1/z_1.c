@@ -5,7 +5,7 @@
 
 int coord (char a, char b)
 {
-    printf("\n Введите координату %c%c точки : ", a, b);
+    printf("\n Enter the coordinates %c%c : ", a, b);
     scanf("%d", &a);
     return (a);
 }
@@ -17,6 +17,6 @@ int main (void)
     int x2 = coord('x','2');
     int y2 = coord('y','2'); 
     float distance = (float) sqrt(pow((x2-x1),2) + (pow((y2-y1),2)));
-    printf("\n Расстояние между точками = %f", distance);
+    printf("\n Distance = %f", distance);
     return(0);
 }

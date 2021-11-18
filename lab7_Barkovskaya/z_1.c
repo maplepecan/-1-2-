@@ -6,13 +6,13 @@
 int main (void)
 {
     float a = -1;
-    while ((a < 0) && (a > 360))
+    while ((a <= 0) || (a >= 360))
     {
-        printf("\n Введите значение угла в градусах : ");
+        printf("\n Enter the angle value : ");
         scanf("%f", &a);
-        if ((a < 0) && (a > 360)) printf("\n Некорректное значение угла");
+        if ((a <= 0) || (a >= 360)) printf("\n  This is an incorrect value");
     }
     a = (M_PI / 180) * a;
-    printf("\n Значение угла в радианах = %f", a);
+    printf("\n Angle value = %f", a);
     return(0);
 }

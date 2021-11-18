@@ -8,7 +8,7 @@
 
 int coord (char a, char b)
 {
-    printf("\n Введите координату %c%c точки : ", a, b);
+    printf("\n Enter the coordinates %c%c : ", a, b);
     scanf("%d", &a);
     return (a);
 }
@@ -22,5 +22,5 @@ int main (void)
     
     float P = 2 * (abs(x1-x2) + abs(y1-y2));
     float S = (float) abs(x1-x2) * abs(y1-y2);
-    printf("\n Площадь = %f, периметр = %f", S, P);  
+    printf("\n Square = %f, Perimeter = %f", S, P);  
 }

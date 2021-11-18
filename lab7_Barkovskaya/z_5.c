@@ -9,11 +9,11 @@ int main (void)
     float A = 0;
     while (A == 0)
     {
-        printf("\n Введите А : ");
+        printf("\n Enter A : ");
         scanf("%f", &A);
-        if (A == 0) printf ("\n A не может быть = 0!");
+        if (A == 0) printf ("\n A can not be equal to 0");
     }
-    printf("\n Введите B : ");
+    printf("\n Enter B : ");
     scanf("%f", &B);
     if (B == 0) 
     {

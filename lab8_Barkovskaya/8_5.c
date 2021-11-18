@@ -10,9 +10,9 @@ int main (void)
     int flag1 = 0; // Отвечает за отрицательные числа
     while ( (A <= -1000) || ( (A >= -99) && (A <= 99) ) || (A >= 1000) )
     {
-        printf("\n Введите трехзначное число : ");
+        printf("\n Enter a three digit number : ");
         scanf("%d", &A);
-        if ( (A <= -1000) || ( (A >= -99) && (A <= 99) ) || (A >= 1000) ) printf("\n Число должно быть трехзначным!");
+        if ( (A <= -1000) || ( (A >= -99) && (A <= 99) ) || (A >= 1000) ) printf("\n The number must be three digit");
     }
     if (A < 0)
     {

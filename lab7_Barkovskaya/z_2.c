@@ -8,11 +8,11 @@ int main (void)
     float a = -1;
     while ((a < 0) || (a > 2 * M_PI))
     {
-        printf("\n Введите значение угла в радианах : ");
+        printf("\n Enter the angle value in radians : ");
         scanf("%f", &a);
-        if ((a < 0) && (a > 2 * M_PI)) printf("\n Некорректное значение угла");
+        if ((a < 0) || (a > 2 * M_PI)) printf("\n This is an incorrect value");
     }
     a = (180 / M_PI) * a;
-    printf("\n Значение угла в градусах = %f", a);
+    printf("\n Angle value = %f", a);
     return(0);
 }

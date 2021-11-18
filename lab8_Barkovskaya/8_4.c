@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <math.h>
- //ДОРАБОТАТЬ: ВЫВОД ОТРИЦАТЕЛЬНЫХ ДВУЗНАЧНЫХ ЧИСЕЛ, ВЫВОД ЧИСЕЛ +- 10, 20, 30 .. (НЕТ НУЛЯ)
+ 
 int main (void)
 {
     int A = -1;
@@ -10,9 +10,9 @@ int main (void)
     int flag2 = 0; // Отвечает за числа 10, 20, 30...
     while ( (A <= -100) || ( (A >= -9) && (A <= 9) ) || (A >= 100) )
     {
-        printf("\n Введите двухначное число : ");
+        printf("\n Enter a two digit number : ");
         scanf("%d", &A);
-        if ( (A <= -100) || ( (A >= -9) && (A <= 9) ) || (A >= 100) ) printf("\n Число должно быть двузначным!");
+        if ( (A <= -100) || ( (A >= -9) && (A <= 9) ) || (A >= 100) ) printf("\n The nubmer must be three digit");
     }
     if (A < 0)
     {
@@ -30,10 +30,10 @@ int main (void)
 
     // printf("\n x = %d, y = %d,  new A = %d", x,y, A);
 
-    if ((flag1 == 0 ) && (flag2 == 0)) printf("\n Перевернутое число = %d ", A);
-    else if ((flag1 == 1) && (flag2 ==0)) printf("\n Перевернутое число = -%d ", A);
-    else if ((flag1 == 0) && (flag2 == 1)) printf("\n Перевернутое число = 0%d", A);
-    else if ((flag1 == 1) && (flag2 == 1)) printf("\n Перевернутое число = -0%d");
+    if ((flag1 == 0 ) && (flag2 == 0)) printf("\n New number = %d ", A);
+    else if ((flag1 == 1) && (flag2 ==0)) printf("\n New number = -%d ", A);
+    else if ((flag1 == 0) && (flag2 == 1)) printf("\n New number = 0%d", A);
+    else if ((flag1 == 1) && (flag2 == 1)) printf("\n New number = -0%d");
 
     return 0;
 }

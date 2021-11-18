@@ -7,7 +7,7 @@
 
 int point (char a)
 {
-    printf("\n Введите точку %c : ", a);
+    printf("\n Enter the point %c : ", a);
     scanf("%d", &a);
     return (a);
 }
@@ -26,11 +26,11 @@ int main (void)
     int C = point('C');
     float distance1 = dist(A, C);
     if (distance1 < 0) distance1 = distance1 * (-1);
-    printf("\n Длина AC = %f, ", distance1);
+    printf("\n Length AC = %f, ", distance1);
     float distance2 = dist(B,C);
     if (distance2 < 0) distance2 = distance2 * (-1);
-    printf("длина BC = %f, ", distance2);
+    printf("length BC = %f, ", distance2);
     float distance = distance1 + distance2;
-    printf("их сумма = %f", distance); 
+    printf("sum = %f", distance); 
     return(0);
 }

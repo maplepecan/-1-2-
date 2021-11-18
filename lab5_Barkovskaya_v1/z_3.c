@@ -8,7 +8,7 @@
 float point (char a)
 {   
     float b;
-    printf("\n Введите точку %c : ", a);
+    printf("\n Enter the point %c : ", a);
     scanf("%f", &b);
     return (b);
 }
@@ -43,6 +43,6 @@ int main (void)
     float BC = dist(B,C);
     if (AC < 0) AC = -AC;
     if (BC < 0) BC = -BC;
-    printf("\n Произведение длин отрезков AC и BC = %f", AC * BC);  
+    printf("\n AC * BC = %f", AC * BC);  
     return(0);
 }

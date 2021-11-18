@@ -8,7 +8,7 @@
 float func (char ch0, int ch1)
 {
     float k;
-    printf("\n Введите значение %c%d : ", ch0, ch1);
+    printf("\n Enter %c%d : ", ch0, ch1);
     scanf("%f", &k);
     return(k);
 }

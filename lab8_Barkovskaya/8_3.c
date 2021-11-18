@@ -12,18 +12,18 @@ int main (void)
     int kolB;
     while (A <= 0)
     { 
-        printf("\n Введите A : ");
+        printf("\n Enter A : ");
         scanf("%d", &A);
-        if (A <= 0) printf("\n А должно быть целым положительным!");
+        if (A <= 0) printf("\n A must be greater than 0");
     }
     while (B <= 0)
     {
-        printf("\n Введите B : ");
+        printf("\n Enter B : ");
         scanf("%d", &B);
-        if (B <= 0) printf("\n В должны быть целым положительным!");
+        if (B <= 0) printf("\n B must be greater than 0");
     }
     kolB = A / B;
     A = A - B*kolB;
-    printf(" \n Длина незанятой части А = %d", A);
+    printf(" \n Length = %d", A);
     return 0;
 }

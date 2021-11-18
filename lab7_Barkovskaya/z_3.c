@@ -6,17 +6,17 @@
 int main (void)
 {
     float X, A, Y, price;
-    printf("\n Введите значение X : ");
+    printf("\n Enter X : ");
     scanf("%f", &X);
-    printf("\n Введите значение A : ");
+    printf("\n Enter A : ");
     scanf("%f", &A);
-    printf("\n Введите значение Y : ");
+    printf("\n Enter Y : ");
     scanf("%f", &Y);
     printf(" \n %f %f %f", X, A, Y);
     price = A / X;
-    printf("\n Один кг стоит %f рублей", price);
+    printf("\n One kg costs %f rubles", price);
     price = Y * price;
-    printf("\n Y кг стоит %f рублей", price);
+    printf("\n Y kg costs %f rubles", price);
 
     return(0);
 }

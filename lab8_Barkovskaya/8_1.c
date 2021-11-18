@@ -6,9 +6,9 @@
 int main (void)
 {
     int byte;
-    printf("\n Введите размер файла в Байтах : ");
+    printf("\n Enter the file size in bytes ^ ");
     scanf("%d", &byte);
     byte = byte / 1024;
-    printf("\n Значение файла в КилоБайтах = %d", byte);
+    printf("\n File size in kilobytes = %d", byte);
     return 0;
 }

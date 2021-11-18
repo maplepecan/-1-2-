@@ -7,15 +7,15 @@
 int main (void)
 {
     float V1, V2, S, T, Result;
-    printf("\n Введите V1 : ");
+    printf("\n Enter V1 : ");
     scanf("%f", &V1);
-    printf("\n Введите V2 : ");
+    printf("\n Enter V2 : ");
     scanf("%f", &V2);
-    printf("\n Введите S : ");
+    printf("\n Enter S : ");
     scanf("%f", &S);
-    printf("\n Введите T : ");
+    printf("\n Enter T : ");
     scanf("%f", &T);
     Result = S + V1 * T + V2 * T;
-    printf("\n Расстояние между автомобилями через Т часов = %f километров", Result);
+    printf("\n Distance between cars in T hours = %f km", Result);
     return(0);
 }
