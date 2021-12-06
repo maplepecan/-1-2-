@@ -27,7 +27,7 @@ int main (void)
     float P = a + b + c;
     float PP = P / 2;
 
-    float S = sqrt(PP * (PP - a) * (PP - b) * (PP * c));
+    float S = sqrt(PP * (PP - a) * (PP - b) * (PP - c));
     printf("\n Square = %f, Perimeter = %f", S, P);
     return(0);
 }

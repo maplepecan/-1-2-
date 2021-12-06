@@ -6,11 +6,11 @@
 int main (void)
 {
     float X, A, Y, price;
-    printf("\n Enter X : ");
+    printf("\n Enter X kg : ");
     scanf("%f", &X);
-    printf("\n Enter A : ");
+    printf("\n Enter A rubles: ");
     scanf("%f", &A);
-    printf("\n Enter Y : ");
+    printf("\n Enter Y kg: ");
     scanf("%f", &Y);
     printf(" \n %f %f %f", X, A, Y);
     price = A / X;

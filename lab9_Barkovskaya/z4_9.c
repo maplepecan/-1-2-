@@ -6,18 +6,27 @@
 
 int main ()
 {
-    int a,b,c,s,s1;
+    int a,b,c,i,j,k,kol_vo,p;
+    p = 0;
+    k = 0;
+    kol_vo = 0;
     printf(" Enter A : ");
     scanf("%d", &a);
     printf("\n Enter B : ");
     scanf("%d", &b);
     printf("\n Enter C : ");
     scanf("%d", &c);
-    s = a * b;
-    s1 = c * c;
-    a = s / s1; //Количество квадратов на прямоугольнике
-    printf("\n %d, ", a);
-    a = s % s1;
-    printf("%d", a);
+    i = a / c;
+    j = b / c;
+    while (i > k) {
+        while (j > p) {
+            p++;
+            kol_vo++;
+        }
+        k++;
+        p=0;
+    }
+    a = (a*b) - (kol_vo * (c*c)); //Количество квадратов на прямоугольнике
+    printf("\n %d, %d", kol_vo, a);
     return(0);
 }

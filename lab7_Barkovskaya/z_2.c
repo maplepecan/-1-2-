@@ -8,7 +8,7 @@ int main (void)
     float a = -1;
     while ((a < 0) || (a > 2 * M_PI))
     {
-        printf("\n Enter the angle value in radians : ");
+        printf("\n Enter the angle value (radians) : ");
         scanf("%f", &a);
         if ((a < 0) || (a > 2 * M_PI)) printf("\n This is an incorrect value");
     }

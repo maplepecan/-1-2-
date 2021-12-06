@@ -13,6 +13,6 @@ int main (void)
         if ((a <= 0) || (a >= 360)) printf("\n  This is an incorrect value");
     }
     a = (M_PI / 180) * a;
-    printf("\n Angle value = %f", a);
+    printf("\n Angle value = %f radians", a);
     return(0);
 }
