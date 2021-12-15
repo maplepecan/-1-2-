@@ -9,7 +9,7 @@ int main (void)
     scanf("%d", &a);
     printf("\nB = ");
     scanf("%d", &b);
-    if ((a > 2) && (b <= 3)) printf("\n A > 2 and B <= 3 is true");
-    else printf("\nA > 2 and B <= 3 is false");
+    if ((a > 2) && (b <= 3)) printf("\ntrue");
+    else printf("\nfalse");
     return (0);
 }

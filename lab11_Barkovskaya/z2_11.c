@@ -11,9 +11,9 @@ int main()
     scanf("%d", &B);
     printf("\nC : ");
     scanf("%d", &C);
-    if (((A > B) && (B > C)) || ((B > A) && (A > C))) sum = A + B;
-    else if (((A > C) && (C > B)) || ((C > A) && (A > B))) sum = C + A;
-    else if (((B > C) && (C > A)) || ((C > B) && (B > A))) sum = C + B;
+    if (((A >= B) && (B > C)) || ((B >= A) && (A > C))) sum = A + B;
+    else if (((A >= C) && (C > B)) || ((C >= A) && (A > B))) sum = C + A;
+    else if (((B >= C) && (C > A)) || ((C >= B) && (B > A))) sum = C + B;
     else if ((A > B) && (B == C)) sum = A;
     else if ((B > A) && (A == C)) sum = B;
     else sum = C;

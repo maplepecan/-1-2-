@@ -11,7 +11,7 @@ int main (void)
     scanf("%d", &b);
     printf("\nC = ");
     scanf("%d", &c);
-    if ((a < b) && (b < c)) printf("\n A < B < C is true");
-    else printf("\nA < B < C is false");
+    if ((a < b) && (b < c)) printf("\ntrue");
+    else printf("\nfalse");
     return (0);
 }
