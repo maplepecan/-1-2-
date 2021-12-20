@@ -1,10 +1,12 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int main ()
 {   
+    system("chcp 65001");
+    system("cls");
     int number, n, i1, rez;
     float cost, cost1, i, a, rezul, a2;
-    printf("\n Enter the number : ");
+    printf("\n Ввведите номер : ");
     scanf("%d", &number);
     switch (number)
     {
